@@ -1,0 +1,18 @@
+interface Interface1 { 
+	 public void myMethod(); 
+} 
+interface Interface2 { 
+ public void myMethod(); 
+} 
+public class Test implements Interface1,Interface2 { 
+ public static void main(String[] args) { 
+		// TODO Auto-generated method stub 
+			Test t = new Test(); 
+			t.myMethod(); 
+	} 
+	@Override 
+	public void myMethod() { 
+		// TODO Auto-generated method stub 
+		System.out.println("In my Method"); 
+} 
+}  
