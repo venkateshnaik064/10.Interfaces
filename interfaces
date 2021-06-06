@@ -1,0 +1,18 @@
+public interface Foo {
+
+    default int bar() {
+        return Hidden.complicatedMethod();
+    }
+
+    default int bazz() {
+        return Hidden.complicatedMethod() + 1;
+    }
+
+    class Hidden {
+
+        private static int complicatedMethod() {
+            return 0;
+        }
+    }
+
+}
